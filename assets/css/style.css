@@ -135,7 +135,7 @@ nav ul li:first-child span {
   margin-right: 8px;
 }
 
-/* slider */
+/* section .slider */
 
 .wrap-slider {
   background: url('../img/sliderBG.jpeg');
@@ -207,18 +207,88 @@ nav ul li:first-child span {
   background-position: 50%;
 }
 
-.s3 {
-  height: 212px;
-  background: #ffffff;
+/* setcions .icons */
+
+.icons {
+  background: url('../img/iconsBG.png');
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 -6px 0 rgba(0, 0, 0, 0.1), 
+  inset 0 -1px 0 rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.3), 0 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-.s3 div {
-  height: 100%;
+.icons .center {
+  display: flex;
 }
+
+.icons .center > div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 40px 60px 35px 0;
+}
+
+.icons .center > div:nth-child(1) img {
+  margin-left: 15px;
+}
+
+.icons .center > div:nth-child(1) h3 {
+  position: relative;
+  left: 20px;
+}
+
+.icons .center > div:nth-child(2) img {
+  position: relative;
+  bottom: 3px;
+}
+
+.icons .center > div:nth-child(3) img {
+  margin-right: 5px;
+}
+
+.icons .center > div::before,
+.icons .center > div:last-child::after {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 1.2px;
+  height: 213px;
+  background: #d4d4d4;
+  content: '';
+}
+
+.icons .center > div:first-child::before {
+  left: 0;
+}
+
+.icons .center > div:nth-child(2)::before {
+  left: 340px;
+}
+
+.icons .center > div:nth-child(3)::before {
+  left: 680px;
+}
+
+.icons .center > div:nth-child(3)::after {
+  right: 0;
+}
+
+.icons .center h3 {
+  margin-top: 10px;
+  font-size: 27px;
+  color: #000000;
+  font-family: "Segoe UI";
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* section s4 */
 
 .s4 {
   height: 509px;
-  background: url('../img/yellowBG.jpeg');
+  background: url('../img/yellowBG.png');
 }
 
 .s5 {
