@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Segoe WP';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Segoe/SegoeWPN.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Lucida Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: url('./assets/fonts/Lucida_Sans/Lucida_Sans_Italic.ttf') format('ttf');
+}
+
+/* style.css */
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.center {
+  position: relative;
+  width: 1020px;
+  margin: auto;
+}
+
+/* header */
+
+header {
+  position: absolute;
+  top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+  width: 100%;
+  height: 100px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: -1px;
+}
+
+.header-logo .logo {
+  background: url('/assets/img/logo2.png') no-repeat 2px 2px;
+}
+
+.header-logo h1 {
+  margin-top: 11px;
+  margin-left: 4px;
+  color: #ffffff;
+  font-size: 41px;
+  font-family: 'Lucida Sans', sans-serif;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+nav {
+  position: relative;
+  right: -1px;
+  display: flex;
+  height: 41px;
+  background: #f5c506;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  box-shadow: -3px -6px rgba(245, 197, 6, 0.3), -8px -8px rgba(245, 197, 6, 0.3);
+}
+
+nav ul a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  color: #9b7d08;
+  font-size: 17px;
+  font-family: "Segoe WP", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  height: 100%;
+  border-right: 1px solid rgba(155, 125, 8, 0.5);
+}
+
+nav ul li:first-child {
+  padding: 0 22px 0 39px;
+  letter-spacing: -0.6px;
+}
+
+nav ul li:nth-child(2) {
+  padding: 0 18px 0 14px;
+  letter-spacing: -1.5px;
+}
+
+nav ul li:nth-child(3) {
+  padding: 0 22px 0 17px;
+  letter-spacing: -0.6px;
+}
+
+nav ul span {
+  margin-top: 2px;
+  margin-right: 7px;
+}
+
+nav ul li:first-child span {
+  margin-right: 8px;
+}
+
+/* slider */
+
+.s2 {
+  height: 566px;
+  background: url('/assets/img/headerBG.jpeg');
+  background-size: cover;
+}
+
+.s3 {
+  height: 212px;
+  background: #FFFFFF;
+}
+
+.s4 {
+  height: 509px;
+  background: url('/assets/img/yellowBG.jpeg');
+}
+
+.s5 {
+  height: 499px;
+  background: url('/assets/img/greyBG.jpeg');
+  
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.s6 {
+  height: 64px;
+  background: url('/assets/img/footerBG.jpeg');
+}
+
