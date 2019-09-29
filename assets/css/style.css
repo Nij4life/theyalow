@@ -1,3 +1,5 @@
+/* Mini reset */
+
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, a, ul, li,
 footer, header, nav, video {
@@ -84,7 +86,7 @@ header {
   margin-left: 4px;
   color: #ffffff;
   font-size: 41px;
-  font-family: 'Lucida Sans', sans-serif;
+  font-family: 'Lucida Sans', "Arial", sans-serif;
   font-style: italic;
   font-weight: normal;
   text-align: center;
@@ -106,20 +108,6 @@ nav ul {
   box-shadow: -3px -6px rgba(245, 197, 6, 0.3), -8px -8px rgba(245, 197, 6, 0.3);
 }
 
-nav ul a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-  padding-top: 1px;
-  color: #9b7d08;
-  font-size: 17px;
-  font-family: "Segoe WP", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 nav ul li {
   height: 100%;
   border-right: 1px solid rgba(155, 125, 8, 0.5);
@@ -138,6 +126,20 @@ nav ul li:nth-child(2) {
 nav ul li:nth-child(3) {
   padding: 0 22px 0 17px;
   letter-spacing: -0.6px;
+}
+
+nav ul a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-top: 1px;
+  color: #9b7d08;
+  font-size: 17px;
+  font-family: "Segoe WP", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 nav ul span {
@@ -175,7 +177,7 @@ nav ul li:first-child span {
   font-size: 63px;
   letter-spacing: 0.8px;
   color: #ffffff;
-  font-family: 'Asap', sans-serif;
+  font-family: 'Asap', "Arial", sans-serif;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -311,7 +313,7 @@ nav ul li:first-child span {
   padding: 35px 0 32px;
   font-size: 34px;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: -0.5px;
@@ -320,9 +322,10 @@ nav ul li:first-child span {
 .carousel {
   position: relative;
   left: -2px;
+  padding-bottom: 1px;
 }
 
-.carousel>div {
+.carousel > div {
   display: flex;
   justify-content: space-between;
   max-height: 233px;
@@ -354,7 +357,6 @@ nav ul li:first-child span {
 .carousel .carousel-right {
   margin-left: 34px;
   background: #ec9e03;
-  /* background-color: rgba(188,125,0,0.9019607843137255); */
 }
 
 .carousel .carousel-right img {
@@ -385,7 +387,7 @@ nav ul li:first-child span {
   letter-spacing: 1px;
 }
 
-.carousel input[type=range] {
+.carousel input[type="range"] {
   -webkit-appearance: none;
   outline : none;
   position: relative;
@@ -396,11 +398,10 @@ nav ul li:first-child span {
   margin: 20px auto;
   margin-top: 44px;
   border-radius: 15px;
-  background-color: rgb(251, 230, 150);
-
+  background-color: rgb(251, 230, 150, 0.8);
 }
 
-.carousel input[type=range]::-webkit-slider-thumb {
+.carousel input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   position: relative;
   left: 12px;
@@ -428,10 +429,11 @@ nav ul li:first-child span {
   padding-bottom: 35px;
   font-size: 42px;
   color: #f5c506;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   letter-spacing: -2.2px;
   text-align: center; 
+  text-transform: uppercase;
 }
 
 .devices .devices-left {
@@ -460,7 +462,7 @@ nav ul li:first-child span {
   width: 116px;
   height: 116px;
   font-size: 18px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 500;
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -504,11 +506,11 @@ nav ul li:first-child span {
 }
 
 .devices .devices-right li:nth-child(2n-1) {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
 }
 
 .devices .devices-right li:nth-child(2n) {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .devices .devices-right li::before {
@@ -530,7 +532,6 @@ nav ul li:first-child span {
 /* footer */
 
 footer {
-  /* height: 64px; */
   background: #4c4c4c;
 }
 
@@ -553,7 +554,7 @@ footer .logo h2 {
   padding-bottom: 10px;
   margin-left: 7px;
   color: #ffffff;
-  font-family: 'Lucida Sans', sans-serif;
+  font-family: 'Lucida Sans', "Arial", sans-serif;
   font-size: 29px;
   font-style: italic;
   font-weight: normal;
