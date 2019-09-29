@@ -25,13 +25,13 @@
         <nav>
           <ul>
             <li>
-              <a><span><img src="./assets/img/iconAbout.png" alt="icon about"></span>About us</a>
+              <a href="/" target="_blank"><span><img src="./assets/img/iconAbout.png" alt="icon about"></span>About us</a>
             </li>
             <li>
-              <a><span><img src="./assets/img/iconServices.png" alt="icon services"></span>Services</a>
+              <a href="/" target="_blank"><span><img src="./assets/img/iconServices.png" alt="icon services"></span>Services</a>
             </li>
             <li>
-              <a><span><img src="./assets/img/iconContact.png" alt="icon contact" width="25"
+              <a href="/" target="_blank"><span><img src="./assets/img/iconContact.png" alt="icon contact" width="25"
                 height="18"></span>Contact</a>
             </li>
           </ul>
@@ -48,6 +48,11 @@
             Тег video не поддерживается вашим браузером.
             <a href="/">Скачайте видео</a>.
           </video>
+          <div class="slider-control">
+            <span><img src="/assets/img/play.png" alt="play" width="10" height="17"></span>
+            <input type="range" min="0" max="3" step="1" value="0">
+            <span> <img src="/assets/img/sound.png" alt="sound" width="15" height="15"></span>
+          </div>
           <h2>
             <span>The cool</span>
             <span> The minimal</span>
@@ -58,16 +63,22 @@
     <div class="icons">
       <div class="center">
         <div>
-          <img src="assets/img/cloud.png" alt="Better design" width="109" height="74">
-          <h3>Better design</h3>
+          <a href="/">
+            <img src="assets/img/cloud.png" alt="Better design" width="109" height="74">
+            <h3>Better design</h3>
+          </a>
         </div>
         <div>
-          <img src="assets/img/sheet.png" alt="Costomise" width="91" height="95">
-          <h3>Costomise</h3>
+          <a href="/">
+            <img src="assets/img/sheet.png" alt="Costomise" width="91" height="95">
+            <h3>Costomise</h3>
+          </a>
         </div>
         <div>
-          <img src="assets/img/plane.png" alt="Its free" width="81" height="83">
-          <h3>Its free</h3>
+          <a href="/">
+            <img src="assets/img/plane.png" alt="Its free" width="81" height="83">
+            <h3>Its free</h3>
+          </a>
         </div>
       </div>
     </div>
@@ -80,8 +91,9 @@
               <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                   inci-<wbr>didunt ut</p>
+                  <span class="plus"></span>
               </div>
-              <div>
+              <div class="wrap-video">
                 <video width="315" height="232" poster="./assets/img/moveBG.jpeg">
                   <source src="/" type='video/ogg; codecs="theora, vorbis"'>
                   <source src="/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -93,6 +105,7 @@
             </div>
             <div class="carousel-right">
               <img src="/assets/img/twitter.svg" alt="twitter" width="163" height="133">
+              <span class="plus"></span>
             </div>
           </div>
           <div class="date">
@@ -142,3 +155,4 @@
 </body>
 
 </html>
+
