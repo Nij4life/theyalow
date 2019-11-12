@@ -59,7 +59,7 @@ You must use pure HTML and CSS in your solution. Fonts and images must be hosted
 - [x] Video element placed with image placeholder.
 - [x] All '+' should be interactive.
 - [x] Twitter messages should have the same design with 2 lines - message and author. 
-- [x] (+ / -) Form -> input + submit
+- [] (+ / -) Form -> input + submit
 
 3. Footer (1)
 - [x] Logo
@@ -67,3 +67,5 @@ You must use pure HTML and CSS in your solution. Fonts and images must be hosted
 ### Mark calculation: 
 - 100 - 5 - (5 + 5 + 2.5) - 2.5(span>img) = 80
 - **Total** 80 points
+### Mentor mark
+- **Total** 75 points
